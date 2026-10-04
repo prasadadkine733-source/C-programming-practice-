@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int ldr;
+
+    printf("Enter LDR sensor value: ");
+    scanf("%d", &ldr);
+
+    if (ldr < 500)
+    {
+        printf("Display: BRIGHT\n");
+    }
+    else if (ldr > 600)
+    {
+        printf("Display: NORMAL/DARK\n");
+    }
+    else
+    {
+        printf("Display: WARNING - LDR value in threshold range\n");
+    }
+
+    printf("STOP\n");
+
+    return 0;
+}
