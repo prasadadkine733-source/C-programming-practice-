@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+
+void main()
+{
+    int battery;
+    
+
+    for(battery = 10; battery <= 100; battery = battery + 10)
+    {
+        printf("Battery Level = %d%%\n", battery);
+    }
+
+    return 0;
+}
