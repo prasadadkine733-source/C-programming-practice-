@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, battery;
+
+    for(i = 1; i <= 5; i++)
+    {
+        printf("Enter robot battery level: ");
+        scanf("%d", &battery);
+
+        if(battery >= 50)
+        {
+            printf("Robot Ready\n");
+        }
+        else
+        {
+            printf("Low Battery\n");
+        }
+    }
+
+    return 0;
+}
