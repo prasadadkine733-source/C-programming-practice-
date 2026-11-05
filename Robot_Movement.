@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char cmd[10];
+
+    printf("Enter Command: ");
+    scanf("%9s", cmd);
+
+    if(strcmp(cmd,"LEFT")==0)
+        printf("Robot Moving Left");
+    else if(strcmp(cmd,"RIGHT")==0)
+        printf("Robot Moving Right");
+    else
+        printf("Invalid Command");
+
+    return 0;
+}
