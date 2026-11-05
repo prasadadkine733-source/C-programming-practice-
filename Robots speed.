@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int speed;
+
+    printf("Enter Robot Speed: ");
+    scanf("%d", &speed);
+
+    if(speed > 50)
+        printf("High Speed");
+    else
+        printf("Normal Speed");
+
+    return 0;
+}
