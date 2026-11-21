@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main ()
+{
+   int i,mark,sum = 0;
+
+   for(i = 1;i<=5;i++)
+   {
+      printf("Enteryour subject mark %d;",i);
+      scanf("%d,&mark");
+
+      sum = sum + mark;
+   }
+
+   printf("Total mark = %d",sum);
+
+   if(sum>=200)
+   {
+     printf("\nstudent progress is: PASS");
+   }
+   else
+   {
+    printf("\nstudent progress is: FAIL");
+   }
+
+   return 0; 
+}
